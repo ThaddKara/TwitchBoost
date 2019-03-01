@@ -28,4 +28,4 @@ Create front end for web app
 Payment processing (bitcoin, ethereum, paypal)
 
 #### COMPLETED
-
+Invidivual bot functionality
