@@ -6,13 +6,16 @@ TwitchLib - Created by SwitfySpiffy
 
 ## Layout
 App -> successful input -> insert information to dynamodb -> invoke lambda function
+-> bot manager -> longevitiy/DOC
 
 ### App
-Will host static web app using aws beanstalk or s3 bucket using simple html/css/js
+Will host dynamic web app using aws beanstalk or s3 bucket using aspx pages
 Uppon successful input (payment receieved) will update channelname, #ofbots, time(?)
 
 ### Dynamodb
 Hold information of past customers as well as in-progress customers
+Hold login credentials and api keys of individual bots
+bool currentlyinuse ? checknext : process
 
 ### Lambda
 Lambda function will process each new input to the database and instantiate a serverless instance of a bot manager
